@@ -894,6 +894,7 @@ def single_split_many_return(df,mvp,totarget='logerror'):
     venturalist.append(y_ventura_validate)
     venturalist.append(X_ventura_test)
     venturalist.append(y_ventura_test)
+    venturalist.append(ventura_train)
 
     train=train.drop(columns=['transaction_month', 'yearbuilt','longitude','latitude'])
     validate=validate.drop(columns=['transaction_month','yearbuilt','longitude','latitude'])
